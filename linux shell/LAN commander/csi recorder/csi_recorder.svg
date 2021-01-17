@@ -955,13 +955,13 @@
 			<text x="171.99" y="883.33" class="st11" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>‘_trigger_’</text>		</g>
 		<g id="shape218-301" v:mID="218" v:groupContext="shape" v:layerMember="1" transform="translate(420.599,-79.6438)">
 			<title>动态连接线.218</title>
-			<desc>‘[ip]: done’</desc>
+			<desc>‘[ip]: returned with code’</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
-			<v:textRect cx="-103.75" cy="795.892" width="45.78" height="17.6036"/>
+			<v:textRect cx="-103.75" cy="795.892" width="92.14" height="17.6036"/>
 			<path d="M0 880.93 L-18.9 880.93 A2.3622 2.3622 -180 0 0 -23.62 880.93 L-64.44 880.93 L-64.44 795.89 L-286.5 795.89"
 					class="st5"/>
-			<rect v:rectContext="textBkgnd" x="-121.635" y="791.092" width="35.7698" height="9.59985" class="st10"/>
-			<text x="-121.64" y="798.29" class="st11" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>‘[ip]: done’</text>		</g>
+			<rect v:rectContext="textBkgnd" x="-144.815" y="791.092" width="82.1291" height="9.59985" class="st10"/>
+			<text x="-144.81" y="798.29" class="st11" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>‘[ip]: returned with code’</text>		</g>
 		<g id="shape229-308" v:mID="229" v:groupContext="shape" transform="translate(0.5,-809.565)">
 			<title>工作表.229</title>
 			<desc>master.bash</desc>
@@ -976,5 +976,18 @@
 			<v:textRect cx="92.126" cy="845.498" width="184.26" height="70.8661"/>
 			<rect x="0" y="810.065" width="184.252" height="70.8661" class="st15"/>
 			<text x="51.51" y="850.9" class="st16" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>slave.bash</text>		</g>
+		<g id="shape231-314" v:mID="231" v:groupContext="shape" v:layerMember="1" transform="translate(563.657,-270.982)">
+			<title>动态连接线.231</title>
+			<path d="M0 880.93 L0 817.15 L-66.15 817.15" class="st5"/>
+		</g>
+		<g id="shape233-319" v:mID="233" v:groupContext="shape" v:layerMember="1" transform="translate(563.657,-270.982)">
+			<title>动态连接线.233</title>
+			<desc>‘_sychronized_’</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="-185.909" cy="786.821" width="61.91" height="17.6036"/>
+			<path d="M0 880.93 L0 786.82 L-105.26 786.82 A2.3622 2.3622 -180 0 0 -109.99 786.82 L-410.32 786.82 L-410.32 817.15 L-429.56
+						 817.15" class="st5"/>
+			<rect v:rectContext="textBkgnd" x="-211.86" y="782.021" width="51.9027" height="9.59985" class="st10"/>
+			<text x="-211.86" y="789.22" class="st11" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>‘_sychronized_’</text>		</g>
 	</g>
 </svg>
