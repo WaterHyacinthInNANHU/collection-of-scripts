@@ -16,16 +16,25 @@ do
     if [ ! -z "${text}" ]; then
         if [ "${text}" = "_trigger_" ]; then
             while [ ! -z "$(lsof ${data_path})" ]; do sleep 0.1; done
+
+
+#############################################################
+            # access parameters stored in data.txt
+            aoa=$(awk NR==1 ${data_path})
             para1=$(awk NR==2 ${data_path})
-            # para2=$(awk NR==3 ${data_path})
-            # para3=$(awk NR==4 ${data_path})
+            para2=$(awk NR==3 ${data_path})
+            para3=$(awk NR==4 ${data_path})
+            #...
+
             echo "recording csi..."
-            # execute csi recording here
+            # result=$(run your csi recorder here)
             echo -e "done\n"
+#############################################################
+
             while [ ! -z "$(lsof ${master_path})" ]; do sleep 0.1; done
             master_ip=$(awk NR==1 ${master_path})
             master="${master_ip} ${master_port}"
-            echo "[${inetip}]: done" | nc $master -w 0
+            echo "[${inetip}]: returned with ${result}" | nc $master -w 0
         else
             # synchronize data.txt
             while [ ! -z "$(lsof ${data_path})" ]; do sleep 0.1; done

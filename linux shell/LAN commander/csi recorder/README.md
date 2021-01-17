@@ -1,31 +1,55 @@
-# LANcommander(for csi recording)
+![csi_recorder](csi_recorder.svg)
+
+# csi recorder
 
 ## Install
 
 ### **master**
 
 - Copy ```master``` folder to master device
-- Copy binary executable ```nlink_unpack``` to ```master\nlink_unpack\```
 - Write slaves' ip addresses in ```slaves.txt```. ONE IP PER LINE, NO EMPTY LINE
 
 ### **slaves**
 
 - Write slaves' ip addresses in ```master.txt```. 
 - Copy ```slave``` folder with the modified ```master.txt``` to each slave device
+- Replace ```run your csi recorder here``` in ```slave.bash``` with execution of your own csi recording program
+
+```bash
+#############################################################
+            # access parameters stored in data.txt
+            aoa=$(awk NR==1 ${data_path})
+            para1=$(awk NR==2 ${data_path})
+            para2=$(awk NR==3 ${data_path})
+            para3=$(awk NR==4 ${data_path})
+            #...
+
+            echo "recording csi..."
+            # result=$(run your csi recorder here)
+            echo -e "done\n"
+#############################################################
+```
+
+parameters can be accessed via
+
+```bash
+            # access parameters stored in data.txt
+            aoa=$(awk NR==1 ${data_path})
+            para1=$(awk NR==2 ${data_path})
+            para2=$(awk NR==3 ${data_path})
+            para3=$(awk NR==4 ${data_path})
+            #...
+```
 
 ## Usage
 
 ### **master**
 
-- run ```master.bash```
+- Run ```master.bash```
 
 ### **slaves**
 
-- run ```slave.bash```
-
-## Workflow
-
-![csi_recorder](csi_recorder.svg)
+- Run ```slave.bash```
 
 ## Note
 
