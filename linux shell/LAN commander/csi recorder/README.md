@@ -13,7 +13,7 @@
 
 - Write slaves' ip addresses in ```master.txt```. 
 - Copy ```slave``` folder with the modified ```master.txt``` to each slave device
-- Replace ```run your csi recorder here``` in ```slave.bash``` with execution of your own csi recording program
+- Replace ```# run your csi recorder here``` in ```slave.bash``` with execution of your own csi recording program
 
 ```bash
 #############################################################
@@ -25,7 +25,8 @@
             #...
 
             echo "recording csi..."
-            # result=$(run your csi recorder here)
+            # run your csi recorder here
+            exec_result=$?
             echo -e "done\n"
 #############################################################
 ```
