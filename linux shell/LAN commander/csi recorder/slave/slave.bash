@@ -27,14 +27,15 @@ do
             #...
 
             echo "recording csi..."
-            # result=$(run your csi recorder here)
+            # run your csi recorder here
+            exec_result=$?
             echo -e "done\n"
 #############################################################
 
             while [ ! -z "$(lsof ${master_path})" ]; do sleep 0.1; done
             master_ip=$(awk NR==1 ${master_path})
             master="${master_ip} ${master_port}"
-            echo "[${inetip}]: returned with ${result}" | nc $master -w 0
+            echo "[${inetip}]: returned with ${exec_result}" | nc $master -w 0
         else
             # synchronize data.txt
             while [ ! -z "$(lsof ${data_path})" ]; do sleep 0.1; done
